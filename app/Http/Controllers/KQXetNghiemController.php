@@ -44,9 +44,9 @@ class KQXetNghiemController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show($benhnhan_id)
     {
-        $kq_xnbn= DB::table('ksk_ketqua_xetnghiem')->where('BenhNhan_Id','306980')->orderby( 'DichVu_Id','desc')->get();
+        $kq_xnbn= DB::table('ksk_ketqua_xetnghiem')->where('BenhNhan_Id',$benhnhan_id)->orderby( 'DichVu_Id','desc')->get();
        return view('pages.xetnghiem.ketquaxetnghiem')->with('kq_xnbn',$kq_xnbn);
 
     }

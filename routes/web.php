@@ -67,7 +67,7 @@ Route::get('/chitietsanpham/{product_id}', 'ProductController@show');
 /*dm-sản phẩm-trang chủ*/
 
 /**CHC */
-Route::get('/ketquaxetnghiem', 'KQXetNghiemController@show');
+Route::get('/ketquaxetnghiem/{benhnhan_id}', 'KQXetNghiemController@show');
 
 
 

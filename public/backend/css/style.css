@@ -15,6 +15,9 @@ span.fa-thumb-styling.fa.fa-thumbs-down {
     font-size: 24px;
     color: rgb(180, 6, 6);
 }
+.hide{
+    visibility: hidden !important;
+}
 /* .batthuong {
     font-size: 24px !important;
     font-weight: bold !important;
@@ -22,6 +25,18 @@ span.fa-thumb-styling.fa.fa-thumbs-down {
 } */
 .batthuong {
 	color: red !important;
+}
+.table-wrapper{
+    overflow-y: scroll;
+  height: 768px;
+}
+.headXN{
+background-color: white !important;
+color:black !important;
+}
+.table-wrapper th{
+    position: sticky;
+    top: 0;
 }
 .tengroup {
     color:rgb(42, 56, 182) !important;

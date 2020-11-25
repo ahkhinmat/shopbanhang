@@ -26,16 +26,16 @@
               </div>
             </div>
           </div> --}}
-          <div class="table-responsive">
+          <div class="table-responsive table-wrapper">
             <table class="table table-striped b-t b-light">
               <thead>
                 <tr>
-                    <th scope="col">DichVu_ID</th>
-                    <th scope="col">STT</th>
-                  <th scope="col">Tên xét nghiệm</th>
-                  <th scope="col">Kết quả</th>
-                  <th scope="col">Đơn vị tính</th>
-                  <th scope="col">Trị số bình thường</th>
+                    <th class="headXN" scope="col">BenhNhan_Id</th>
+                    <th class="headXN hide" scope="col">STT</th>
+                  <th  class="headXN" scope="col">Tên xét nghiệm</th>
+                  <th class="headXN" scope="col">Kết quả</th>
+                  <th class="headXN" scope="col">Đơn vị tính</th>
+                  <th class="headXN" scope="col">Trị số bình thường</th>
                 </tr>
               </thead>
               <tbody>
@@ -48,8 +48,6 @@
                                       </tr>
                                 <?php
                                     }  ?>
-
-
                             <?php  
                                 if($kq->DichVu_Id!=$id_dichvu_check){ ?>
                                     <tr>
@@ -65,10 +63,9 @@
                                 </tr>
                             <?php
                                 }  ?>
-                           
                             <tr>
-                                <td><span class="text-ellipsis">{{$kq->DichVu_Id}}</span></td>
-                                <td><span class="text-ellipsis">{{$kq->STT}}</span></td>
+                                <td><span class="text-ellipsis">{{$kq->BenhNhan_Id}}</span></td>
+                                <td class="hide"><span class="text-ellipsis">{{$kq->STT}}</span></td>
                                 <td><span class="text-ellipsis">{{$kq->NoiDung}}</span></td>
 
                                 <td><span class="text-ellipsis">
